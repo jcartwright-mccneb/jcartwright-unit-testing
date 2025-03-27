@@ -70,7 +70,8 @@ import {
     it('returns false when no enemies collide', () => {
       const player = { x: 0, y: 0, size: 10 };
       const enemies = [{ x: 100, y: 100, size: 10 }];
-      expect(checkEnemyCollision(player, enemies)).toBe(false);
+      const result = checkEnemyCollision(player, enemies)
+      expect(result).toBe(false);
     });
   });
   
@@ -86,6 +87,10 @@ import {
 
     // write a unit test to make sure that the time stays the same 
     // when isGameOver is true
+
+    
+    
+
 
     // write a unit test to make sure that when the game starts over,
     // the timer is incremented from 0 to 1
