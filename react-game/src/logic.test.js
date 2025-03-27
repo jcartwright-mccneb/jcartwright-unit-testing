@@ -71,6 +71,7 @@ import {
       const player = { x: 0, y: 0, size: 10 };
       const enemies = [{ x: 100, y: 100, size: 10 }];
       const result = checkEnemyCollision(player, enemies)
+      
       expect(result).toBe(false);
     });
   });
